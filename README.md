@@ -20,4 +20,6 @@ for /f "delims=" %a in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Window
 
 for /f "delims=" %a in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace" /f "{"') do reg delete %a /f
 
-setx PATH "%PATH%;C:\Program Files\OpenSSL;c:\Program Files\curl\;C:\Program Files (x86)\GnuWin32\bin;C:\Perl\c\bin;C:\Perl\perl\site\bin;C:\Perl\perl\bin;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\PuTTY\;G:\My Drive\Tools\Bin;C:\Program Files\PuTTY;C:\Program Files\7-Zip;C:\Program Files (x86)\Nmap;G:\My Drive\Tools\Bin\qpdf\bin;c:\Program Files (x86)\vim\vim90;G:\My Drive\Tools\Bin\Sysinternals\"
+setx PATH "%PATH%;C:\Perl\c\bin;C:\Perl\perl\site\bin;C:\Perl\perl\bin;C:\Program Files\OpenSSL;c:\Program Files\curl;C:\Program Files\PuTTY;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files (x86)\GnuPG\bin"
+
+setx PATH "%PATH%;C:\Program Files\7-Zip;c:\Program Files (x86)\vim\vim90;C:\Program Files (x86)\Nmap;G:\My Drive\Tools\Bin;G:\My Drive\Tools\Bin\qpdf\bin;G:\My Drive\Tools\Bin\Sysinternals"
