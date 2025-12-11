@@ -8,6 +8,8 @@ reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\
 
 reg add HKLM\SOFTWARE\Policies\Microsoft\Windows\Personalization
 
+powercfg.exe /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOIDLE 600
+
 reg add HKLM\SOFTWARE\Policies\Microsoft\Windows\Personalization /v NoLockScreen /t REG_DWORD /d 1 /f
 
 reg add "HKCU\Control Panel\Desktop\WindowMetrics" /v BorderWidth /d 0 /f
